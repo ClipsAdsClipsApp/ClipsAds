@@ -28,7 +28,7 @@ export const Route = createRootRoute({
     ],
     links: [
       //Aqui lo vinculo al manifest
-      { rel: 'manifest', href: '/manifest.json' }
+      { rel: 'manifest', href: '/manifest.json' },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/_Emer/manifest.webmanifest" },

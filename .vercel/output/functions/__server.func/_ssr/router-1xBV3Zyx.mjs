@@ -131,7 +131,7 @@ function resolveCurrentEmbedderOrigin() {
 function installPreviewHostBridge(options = {}) {
 	const parentOrigin = resolveCurrentEmbedderOrigin();
 	if (parentOrigin === null) return () => {};
-	const ROOT_STATE_KEY = "__grokPreviewBridgeRoot";
+	const ROOT_STATE_KEY = "__EmerPreviewBridgeRoot";
 	const originalPushState = window.history.pushState.bind(window.history);
 	const originalReplaceState = window.history.replaceState.bind(window.history);
 	const isAtHistoryRoot = () => {
@@ -336,11 +336,11 @@ var Route$1 = createRootRoute({
 			},
 			{
 				rel: "manifest",
-				href: "/__grok/manifest.webmanifest"
+				href: "/__Emer/manifest.webmanifest"
 			},
 			{
 				rel: "apple-touch-icon",
-				href: "/__grok/icon-180.png"
+				href: "/__Emer/icon-180.png"
 			},
 			{
 				rel: "preconnect",
